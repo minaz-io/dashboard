@@ -1,4 +1,5 @@
 import { defineConfig } from 'umi';
+import { DASHBOARD_ROUTES } from './src/config/routes';
 
 export default defineConfig({
   nodeModulesTransform: {
@@ -12,23 +13,14 @@ export default defineConfig({
     { path: '/login', component: '@/pages/login', title: 'Login' },
     {
       path: '/',
-      component: '@/layout',
+      component: '@/layout/index.tsx',
       redirect: '/dashboard',
       title: 'Dashboard',
     },
+    DASHBOARD_ROUTES,
     {
-      path: '/dashboard',
-      component: '@/layout',
-      title: 'Dashboard',
-      routes: [
-        {
-          path: '/dashboard',
-          component: '@/pages/chaincode',
-          exact: true,
-          title: 'Chain Code',
-        },
-        // we add sub routes here
-      ],
+      path: '/*',
+      component: '@/pages/404.tsx',
     },
   ],
 });

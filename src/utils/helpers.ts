@@ -37,3 +37,12 @@ export const sleep = async (ms: number = 0) => {
     }, ms);
   });
 };
+
+export function formatTime(time: number) {
+  // the time returned from Oracle RPC service is in epoch format
+  const timeStr = new Date(time * 1000)
+    .toISOString()
+    .replace(/T/, ' ')
+    .replace(/\..+/, '');
+  return timeStr;
+}

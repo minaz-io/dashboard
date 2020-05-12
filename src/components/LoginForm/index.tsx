@@ -3,7 +3,7 @@ import { Form, Input, Button, message } from 'antd';
 import { history } from 'umi';
 import * as user from '@/services/user';
 import * as helpers from '@/utils/helpers';
-import styles from './LoginForm.less';
+import styles from './index.less';
 
 const layout = {
   labelCol: {

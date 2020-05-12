@@ -1,26 +1,39 @@
 # Car-Dealer-Dashboard
 
-## Getting Started
+## About project
 
-Install dependencies,
+This is a chaincode sample project(Car Dealership Samples) for Oracle Blockchain Platform. The purposes of this project are
+- to demostrate how the traceability works, 
+- to help engineers to understand the fundamental terminology of Oracle Blockchain Platform,
+- and how chaincode invoke and query works.
+
+
+## How to start the project
+
+This is a frontend work build with `dva.js`, `umi.js` and `ant.design` UI framework. You can find a template at [here]((https://github.com/katesroad/ant-design-umi-dva-template)).
+
+To playaround, you need to install the project dependencies by
 
 ```bash
-$ yarn
+$ yarn install
 ```
 
-Start the dev server,
+Start the dev server, by 
 
 ```bash
 $ yarn start
 ```
 
-## About the frontend stuff
+Build project for production.
 
-This project is built from [template](https://github.com/katesroad/ant-design-umi-dva-template). Under the hood, the UI framework is ant design, the frontend routing is umi.js and the model management is using dva.js.
+```
+$ yarn build
+```
 
-## About the API endpoint
+## About chaincode and API endpoints
 
-API endpoint document is at https://github.com/minaz-io/obcs-demo/blob/master/REST/car-dealer-test-API.sh.
+- API endpoints: https://github.com/minaz-io/obcs-demo/blob/master/REST/car-dealer-test-API.sh.
+- Chaincode in Node.js: https://github.com/minaz-io/obcs-demo/tree/master/node
 
 ## About what happens when you test the app
 
